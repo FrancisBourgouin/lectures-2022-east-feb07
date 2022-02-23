@@ -1,0 +1,37 @@
+<%- include('partials/_head.ejs') %>
+
+	<section>
+		<main>
+			<div class="door">
+				<% if(email === "gentleman@cambrioleur.com"){ %>
+					<img src="/arsene.gif" alt="">
+				<% } else if(email === "pontiac@bandit.com") { %>
+					<img src="/doug.webp" alt="">
+				<% } %>
+			</div>
+		</main>
+	</section>
+	<section>
+		<% if(!email){  %>
+			<a href="https://www.google.com">REGISTER</a>
+			<form action="/login" method="POST">
+				<label for="email">Email address:</label>
+				<input type="email" name="email" placeholder="Enter your email">
+				<label for="password">Password:</label>
+				<input type="password" name="password" placeholder="Enter your password">
+				<button type="submit">Open the vault!</button>
+			</form>
+		<% } %>
+
+		<% if(email){ %>
+			<form action="/logout" method="POST">
+				<button type="submit">LOGOUT</button>
+			</form>
+		<% } %>
+		<!-- <script>
+			window.alert("MWAHAHAHAHA")
+		</script> -->
+	</section>
+	</body>
+
+	</html>
