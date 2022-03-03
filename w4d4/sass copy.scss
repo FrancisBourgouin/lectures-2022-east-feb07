@@ -1,0 +1,25 @@
+$primary-color: #b0b;
+$secondary-color: #bada55;
+
+main {
+  section {
+    display: flex;
+
+    article {
+      box-sizing: border-box;
+      width: 33%;
+      padding: 1em;
+      color: $primary-color;
+      background: $secondary-color;
+    }
+  }
+
+  & > h1 {
+    padding: 0.5em;
+    border-bottom: 0.25em solid $primary-color;
+  }
+
+  &:hover {
+    background: yellow;
+  }
+}

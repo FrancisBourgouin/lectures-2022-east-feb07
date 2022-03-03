@@ -1,0 +1,14 @@
+main section {
+  display: flex;
+}
+main > h1 {
+  padding: 0.5em;
+  border-bottom: 0.25em solid #b4d;
+}
+main section article {
+  box-sizing: border-box;
+  width: 33%;
+  padding: 1em;
+  color: #b4d;
+  background: #bada55;
+}

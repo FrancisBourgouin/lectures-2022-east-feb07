@@ -1,0 +1,40 @@
+/* 
+px
+em
+rem
+%
+vw / vh
+ch
+*/
+
+body {
+  font-size: 20px;
+}
+
+h1 {
+  font-size: 2em;
+}
+h2 {
+  font-size: 1.5em;
+}
+h3 {
+  font-size: 1.25em;
+}
+
+button {
+  font-size: 1.25em;
+  padding: 0.5em 1em;
+  border: 0.1em solid #bada55;
+}
+
+article {
+  font-size: 0.5em;
+  /* width: 100%;
+  max-width: 600px;
+  min-width: 300px; */
+
+  /* width: clamp(300px, 100%, 600px); */
+  width: clamp(30ch, 100%, 70ch);
+
+  /* width: 70ch; */
+}

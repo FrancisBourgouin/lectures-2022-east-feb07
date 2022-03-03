@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>SASS / SCSS</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="/fancycss.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Super page!</h1>
+    </header>
+    <main>
+      <h1 class="main-title">Posts</h1>
+      <section>
+        <article>
+          <h1>Post #1</h1>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eos consequuntur
+            voluptates error quas assumenda perferendis sapiente accusamus voluptatem,
+            quod consequatur cum delectus dolorem labore. Laudantium aperiam quae mollitia
+            nam fugiat?
+          </p>
+        </article>
+        <article>
+          <h1>Post #2</h1>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eos consequuntur
+            voluptates error quas assumenda perferendis sapiente accusamus voluptatem,
+            quod consequatur cum delectus dolorem labore. Laudantium aperiam quae mollitia
+            nam fugiat?
+          </p>
+        </article>
+        <article>
+          <h1>Post #3</h1>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eos consequuntur
+            voluptates error quas assumenda perferendis sapiente accusamus voluptatem,
+            quod consequatur cum delectus dolorem labore. Laudantium aperiam quae mollitia
+            nam fugiat?
+          </p>
+        </article>
+      </section>
+    </main>
+
+    <script>
+      const colorParty = () => {
+        const red = Math.floor(Math.random() * 255);
+        const green = Math.floor(Math.random() * 255);
+        const blue = Math.floor(Math.random() * 255);
+
+        return `rgb(${red},${green},${blue})`;
+      };
+
+      const sizeParty = () => {
+        const size = Math.floor(Math.random() * 40);
+
+        return `${size}px`;
+      };
+
+      document.documentElement.style.setProperty("--primary-color", colorParty());
+      document.documentElement.style.setProperty("--secondary-color", colorParty());
+      document.documentElement.style.setProperty("--primary-size", sizeParty());
+    </script>
+  </body>
+</html>
